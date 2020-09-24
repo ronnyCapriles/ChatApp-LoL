@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+  height: 100%;
+  background: url("resources/background.PNG") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#nav {
+  background: url("resources/gradient.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: fit-content;
+  font-family: "Poppins", sans-serif;
+}
+#nav a {
+  color: white;
+}
+#nav nav {
+  width: 100%;
+}
+
+#myApp {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: url("resources/2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+#myApp .row-btns {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.outside-card {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  width: 100%;
+  height: 95.5%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.bg-card {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  height: 40%;
+  min-width: 360px;
+  max-width: 500px;
+  min-height: 640px;
+  max-height: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.ctn-card {
+  background: url("resources/card.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.ctn-card form {
+  margin-top: 180px;
+}
+.ctn-card .user-image {
+  background: url("resources/gradient.png");
+  margin: 25px auto;
+  padding: 25px 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+  font-size: 150%;
+}
+.ctn-card .user-name {
+  font-size: 150%;
+}
+.ctn-card .token, .ctn-card .join {
+  display: flex;
+  flex-flow: row;
+  justify-items: center;
+  align-items: center;
+  margin: 15px auto;
+  padding: 10px 10px;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 20px 20px -20px white;
+  -moz-window-shadow: 0px 20px 20px -20px white;
+  -webkit-box-shadow: 0px 20px 20px -20px white;
+}
+.ctn-card .token .token-text, .ctn-card .join .token-text {
+  max-width: 480px;
+  min-width: 300px;
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 180%;
+  text-align: center;
+}
+.ctn-card .token input[type=text], .ctn-card .join input[type=text] {
+  color: inherit;
+  border: 0px;
+  outline: none;
+  background: inherit;
+}
+
+.join {
+  width: 70%;
+  justify-content: center;
+  margin-top: 20px;
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 150%;
+}
+
+.container-fluid {
+  height: 93.6%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-form label {
+  color: white;
+  margin-top: 5px;
+}
+.login-form form {
+  padding: 25px;
+  width: 50%;
+  background-image: url("resources/background.PNG");
+  box-shadow: 0px 0px 15px 5px #181818;
+  -moz-window-shadow: 0px 0px 15px 5px #181818;
+  -webkit-box-shadow: 0px 0px 15px 5px #181818;
+}
+.login-form form input {
+  outline: none;
+  width: 100%;
+  padding: 5px 20px;
+}
+.login-form .login-name {
+  display: flex;
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  margin-bottom: 10px;
+  border-bottom: white 1px solid;
+  justify-content: center;
+}
+.login-form .form-group {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.login-form .form-group input[type=submit] {
+  margin-top: 25px;
+  background-image: url("resources/gradient.png");
+  border: none;
+}
+
+.btn-create {
+  margin: 0 auto;
+  background: url("resources/gradient.png");
+  background-size: cover;
+  padding: 10%;
+  opacity: 0.7;
+  box-shadow: 0px 0px 20px 2px #3f015c;
+  -moz-window-shadow: 0px 0px 20px 2px #3f015c;
+  -webkit-box-shadow: 0px 0px 20px 2px #3f015c;
+}
+
+.btn-create:hover {
+  opacity: 1;
+}
+
+.p-btn {
+  font-size: 250%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+
+.btn-container {
+  padding: 20%;
+}
+
+.users-active .user-image, .box .box-cnt .box-chat .box-msg .message-left .ms-image, .box .box-cnt .box-chat .box-msg .message-rigth .ms-image, .chats .chat-room, .chats .chat-otherchat, .chats .chat-mychat {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  border-radius: 100px;
+  background: url("resources/gradient.png");
+  color: white;
+  font-size: 36px;
+}
+
+.chats .chat-otherchat, .chats .chat-mychat {
+  margin-right: 10px;
+}
+.chats .chat-otherchat div, .chats .chat-mychat div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.chat-app {
+  all: inherit;
+  flex-flow: column;
+  background: #181818;
+}
+
+.chats {
+  position: relative;
+  width: 100%;
+  height: 81px;
+  display: flex;
+  flex-flow: row-reverse;
+  align-content: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding-right: 15px;
+}
+.chats .chat-room {
+  box-shadow: 0px 0px 20px 2px #3f015c;
+  -moz-window-shadow: 0px 0px 20px 2px #3f015c;
+  -webkit-box-shadow: 0px 0px 20px 2px #3f015c;
+  outline: none;
+  border: none;
+  padding-top: 5px;
+  margin-bottom: 11px;
+  margin-left: 20px;
+}
+.chats .ctn-chat {
+  display: block;
+  overflow-x: scroll;
+  width: 70%;
+  padding-bottom: 5px;
+}
+.chats .ctn-chat::-webkit-scrollbar {
+  height: 6px;
+  background-color: none;
+}
+.chats .ctn-chat::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: none;
+}
+.chats .ctn-chat::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: black;
+}
+.chats .ctn-chat-btn {
+  display: flex;
+  flex-flow: row-reverse;
+  width: fit-content;
+  margin-left: auto;
+}
+.chats .chat-otherchat {
+  border: 1px solid black;
+}
+
+.row-chat {
+  width: 100%;
+  height: 80%;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.box {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: #222222;
+  opacity: 0.95;
+}
+.box .box-cnt {
+  height: 90%;
+}
+.box .box-cnt .box-msg::-webkit-scrollbar {
+  display: none;
+}
+.box .box-cnt .box-chat {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+}
+.box .box-cnt .box-chat .box-msg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+}
+.box .box-cnt .box-chat .box-msg .message-left, .box .box-cnt .box-chat .box-msg .message-rigth {
+  display: flex;
+  padding: 0 5%;
+  font-size: 100%;
+  align-items: center;
+  justify-items: flex-start;
+}
+.box .box-cnt .box-chat .box-msg .message-left .ms-content, .box .box-cnt .box-chat .box-msg .message-rigth .ms-content {
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+  justify-items: flex-start;
+}
+.box .box-cnt .box-chat .box-msg .message-left .ms-image, .box .box-cnt .box-chat .box-msg .message-rigth .ms-image {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+.box .box-cnt .box-chat .box-msg .message-rigth {
+  flex-flow: row-reverse;
+}
+.box .box-cnt .box-chat .box-msg .message-rigth .ms-content {
+  align-items: flex-end;
+}
+.box .box-cnt .box-chat .box-msg .message-rigth .ms-image {
+  margin-left: 5%;
+}
+.box .box-cnt .box-chat .box-msg .message-left {
+  flex-flow: row;
+}
+.box .box-cnt .box-chat .box-msg .message-left .ms-content {
+  align-items: flex-start;
+}
+.box .box-cnt .box-chat .box-msg .message-left .ms-image {
+  margin-right: 5%;
+}
+.box .box-cnt .box-chat .box-msg .ms-user {
+  opacity: 0.8;
+}
+.box .input-msg {
+  height: 10%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.box .input-msg form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.box .input-msg form input {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  padding: 2% 5%;
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 10px;
+  outline-style: none;
+  color: white;
+  font-size: 100%;
+}
+
+.name-token {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: white;
+  padding: 5px 20px;
+  margin-bottom: -10px;
+}
+.name-token .chat-name {
+  color: white;
+  font-size: 150%;
+}
+.name-token .chat-token {
+  font-size: 100%;
+}
+
+.champions {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  color: white;
+}
+.champions .champions-ctn {
+  height: 90%;
+}
+.champions .champions-all {
+  display: block;
+  overflow-y: auto;
+  width: 100%;
+  height: 35%;
+  position: absolute;
+}
+.champions .champions-all::-webkit-scrollbar {
+  display: none;
+}
+.champions .champions-all-overflow {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+}
+.champions .champion-outside {
+  display: block;
+  overflow-y: auto;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 40%;
+}
+.champions .champion-outside::-webkit-scrollbar {
+  display: none;
+}
+.champions .champion-bg {
+  padding: 20px;
+}
+.champions .champion-ctn {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+}
+.champions .img-stats {
+  display: flex;
+  flex-flow: row;
+  font-size: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.champions .img-stats img {
+  width: 50%;
+  margin-right: 10px;
+}
+.champions .img-stats .sp-stats {
+  width: 50%;
+  padding-left: 5px;
+}
+.champions .champion-name {
+  font-size: 150%;
+}
+
+.users-active {
+  height: 100%;
+  color: white;
+}
+.users-active p {
+  border-bottom: 1px solid white;
+}
+.users-active .user-image {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.users-active .user-active-ctn {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+.users-active .user-unactive-ctn {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+.users-active .user-active-box {
+  margin-bottom: 25px;
+  display: flex;
+  flex-flow: column;
+}
+.users-active .user-active-box .user-image {
+  background: none;
+  background-color: #0ea700;
+}
+.users-active .user-unactive-box {
+  display: flex;
+  flex-flow: column;
+}
+.users-active .user-unactive-box .user-image {
+  background: none;
+  background-color: #3a3a3a;
+}
+
+.progress-bar {
+  background-color: #3f015c;
+  background-image: url("resources/gradient.png");
+}
+
+.col-chat {
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.col-users {
+  width: 100%;
+  padding: 15px;
+}
+
+.col-champions {
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=Styles.css.map */
